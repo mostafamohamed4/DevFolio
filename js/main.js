@@ -5,10 +5,8 @@ let work = $('#work').offset().top;
 let blog = $('#blog').offset().top;
 let contact = $('#contact').offset().top;
 
-console.log(about);
 $(window).scroll(() => {
     let scroll = $(window).scrollTop();
-    console.log(scroll);
     if (scroll >= about-50) {
         $('.navbar').css("background-color", "black")
         document.querySelector('.active').classList.remove('active')
@@ -56,5 +54,4 @@ var typed = new Typed('.element', {
 });
 $(document).ready(()=>{
     $(".loading").fadeOut(2000);
-    loading.classList.add("d-flex");
 })
